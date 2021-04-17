@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  JHPhotoPickerController
+//
+//  Created by Jiahao Huang on 2021/4/13.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIView+JHExtension.h"
+#import <Masonry.h>
+
+
+#define KSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define KSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define iPhoneX ([[UIApplication sharedApplication] statusBarFrame].size.height >= 44.0 ? YES : NO)
+
+#define JH_NavBarHeight ([UIApplication sharedApplication].statusBarFrame.size.height + [UINavigationBar appearance].frame.size.height)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

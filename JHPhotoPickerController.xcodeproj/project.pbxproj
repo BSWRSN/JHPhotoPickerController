@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1644F250D9D205F690B0C1DD /* Pods_JHPhotoPickerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C43BB92F6A2540E85FEA40 /* Pods_JHPhotoPickerController.framework */; };
+		4F52C5CB262A6F1200DA573E /* UIView+JHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52C5CA262A6F1200DA573E /* UIView+JHExtension.m */; };
+		4FA5132F26258E4000BECE99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5132E26258E4000BECE99 /* AppDelegate.m */; };
+		4FA5133226258E4000BECE99 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5133126258E4000BECE99 /* SceneDelegate.m */; };
+		4FA5133826258E4000BECE99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA5133626258E4000BECE99 /* Main.storyboard */; };
+		4FA5133A26258E4200BECE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA5133926258E4200BECE99 /* Assets.xcassets */; };
+		4FA5133D26258E4200BECE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA5133B26258E4200BECE99 /* LaunchScreen.storyboard */; };
+		4FA5134026258E4200BECE99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5133F26258E4200BECE99 /* main.m */; };
+		4FA5134926258E9700BECE99 /* JHPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5134826258E9700BECE99 /* JHPhotoPickerController.m */; };
+		4FA513512625902900BECE99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA513502625902900BECE99 /* ViewController.m */; };
+		4FA51368262599F900BECE99 /* JHPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA51367262599F900BECE99 /* JHPhotoPreviewController.m */; };
+		4FA5136F26259A7A00BECE99 /* JHPhotoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */; };
+		4FA5137426259C3800BECE99 /* JHPhotoPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5137326259C3800BECE99 /* JHPhotoPickerModel.m */; };
+		4FA513792625A11A00BECE99 /* JHPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */; };
+		4FA5137D2625A15800BECE99 /* JHPhotoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1140D8920AA1F6CE292067B9 /* Pods-JHPhotoPickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHPhotoPickerController.release.xcconfig"; path = "Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController.release.xcconfig"; sourceTree = "<group>"; };
+		4F52C5C9262A6F1200DA573E /* UIView+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JHExtension.h"; sourceTree = "<group>"; };
+		4F52C5CA262A6F1200DA573E /* UIView+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHExtension.m"; sourceTree = "<group>"; };
+		4FA5132A26258E4000BECE99 /* JHPhotoPickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHPhotoPickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA5132D26258E4000BECE99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FA5132E26258E4000BECE99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FA5133026258E4000BECE99 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4FA5133126258E4000BECE99 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4FA5133726258E4000BECE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FA5133926258E4200BECE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FA5133C26258E4200BECE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FA5133E26258E4200BECE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA5133F26258E4200BECE99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FA5134726258E9700BECE99 /* JHPhotoPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPickerController.h; sourceTree = "<group>"; };
+		4FA5134826258E9700BECE99 /* JHPhotoPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPickerController.m; sourceTree = "<group>"; };
+		4FA5134F2625902900BECE99 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4FA513502625902900BECE99 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4FA5135C262592E000BECE99 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4FA51366262599F900BECE99 /* JHPhotoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPreviewController.h; sourceTree = "<group>"; };
+		4FA51367262599F900BECE99 /* JHPhotoPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPreviewController.m; sourceTree = "<group>"; };
+		4FA5136D26259A7A00BECE99 /* JHPhotoPickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPickerCell.h; sourceTree = "<group>"; };
+		4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPickerCell.m; sourceTree = "<group>"; };
+		4FA5137226259C3800BECE99 /* JHPhotoPickerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPickerModel.h; sourceTree = "<group>"; };
+		4FA5137326259C3800BECE99 /* JHPhotoPickerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPickerModel.m; sourceTree = "<group>"; };
+		4FA513772625A11A00BECE99 /* JHPhotoPreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPreviewCell.h; sourceTree = "<group>"; };
+		4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPreviewCell.m; sourceTree = "<group>"; };
+		4FA5137B2625A15800BECE99 /* JHPhotoPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPreviewView.h; sourceTree = "<group>"; };
+		4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPreviewView.m; sourceTree = "<group>"; };
+		D7C43BB92F6A2540E85FEA40 /* Pods_JHPhotoPickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHPhotoPickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EC145CE50C8E9F831B4AA8 /* Pods-JHPhotoPickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHPhotoPickerController.debug.xcconfig"; path = "Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA5132726258E4000BECE99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1644F250D9D205F690B0C1DD /* Pods_JHPhotoPickerController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E83CC9E0B892BC08D0433F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0EC145CE50C8E9F831B4AA8 /* Pods-JHPhotoPickerController.debug.xcconfig */,
+				1140D8920AA1F6CE292067B9 /* Pods-JHPhotoPickerController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F52C5C7262A6D3100DA573E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4F52C5C9262A6F1200DA573E /* UIView+JHExtension.h */,
+				4F52C5CA262A6F1200DA573E /* UIView+JHExtension.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4FA5132126258E4000BECE99 = {
+			isa = PBXGroup;
+			children = (
+				4FA5132C26258E4000BECE99 /* JHPhotoPickerController */,
+				4FA5132B26258E4000BECE99 /* Products */,
+				3E83CC9E0B892BC08D0433F2 /* Pods */,
+				82D7C2946EAFABC9C11C0AF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA5132B26258E4000BECE99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5132A26258E4000BECE99 /* JHPhotoPickerController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA5132C26258E4000BECE99 /* JHPhotoPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5132D26258E4000BECE99 /* AppDelegate.h */,
+				4FA5132E26258E4000BECE99 /* AppDelegate.m */,
+				4FA5133026258E4000BECE99 /* SceneDelegate.h */,
+				4FA5133126258E4000BECE99 /* SceneDelegate.m */,
+				4FA5134F2625902900BECE99 /* ViewController.h */,
+				4FA513502625902900BECE99 /* ViewController.m */,
+				4F52C5C7262A6D3100DA573E /* Tools */,
+				4FA5134D26258F6600BECE99 /* PhotoPicker */,
+				4FA5133626258E4000BECE99 /* Main.storyboard */,
+				4FA5135C262592E000BECE99 /* PrefixHeader.pch */,
+				4FA5133926258E4200BECE99 /* Assets.xcassets */,
+				4FA5133B26258E4200BECE99 /* LaunchScreen.storyboard */,
+				4FA5133E26258E4200BECE99 /* Info.plist */,
+				4FA5133F26258E4200BECE99 /* main.m */,
+			);
+			path = JHPhotoPickerController;
+			sourceTree = "<group>";
+		};
+		4FA5134D26258F6600BECE99 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5136A26259A4300BECE99 /* Controller */,
+				4FA5136C26259A5300BECE99 /* View */,
+				4FA5137126259BEB00BECE99 /* Model */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		4FA5136A26259A4300BECE99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5134726258E9700BECE99 /* JHPhotoPickerController.h */,
+				4FA5134826258E9700BECE99 /* JHPhotoPickerController.m */,
+				4FA51366262599F900BECE99 /* JHPhotoPreviewController.h */,
+				4FA51367262599F900BECE99 /* JHPhotoPreviewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FA5136C26259A5300BECE99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5136D26259A7A00BECE99 /* JHPhotoPickerCell.h */,
+				4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */,
+				4FA513772625A11A00BECE99 /* JHPhotoPreviewCell.h */,
+				4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */,
+				4FA5137B2625A15800BECE99 /* JHPhotoPreviewView.h */,
+				4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FA5137126259BEB00BECE99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5137226259C3800BECE99 /* JHPhotoPickerModel.h */,
+				4FA5137326259C3800BECE99 /* JHPhotoPickerModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82D7C2946EAFABC9C11C0AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7C43BB92F6A2540E85FEA40 /* Pods_JHPhotoPickerController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA5132926258E4000BECE99 /* JHPhotoPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA5134326258E4200BECE99 /* Build configuration list for PBXNativeTarget "JHPhotoPickerController" */;
+			buildPhases = (
+				075D7858CD800C3A3004A4D5 /* [CP] Check Pods Manifest.lock */,
+				4FA5132626258E4000BECE99 /* Sources */,
+				4FA5132726258E4000BECE99 /* Frameworks */,
+				4FA5132826258E4000BECE99 /* Resources */,
+				A57554D1236E720AB54AD4A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHPhotoPickerController;
+			productName = JHPhotoPickerController;
+			productReference = 4FA5132A26258E4000BECE99 /* JHPhotoPickerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA5132226258E4000BECE99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4FA5132926258E4000BECE99 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4FA5132526258E4000BECE99 /* Build configuration list for PBXProject "JHPhotoPickerController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FA5132126258E4000BECE99;
+			productRefGroup = 4FA5132B26258E4000BECE99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA5132926258E4000BECE99 /* JHPhotoPickerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA5132826258E4000BECE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA5133D26258E4200BECE99 /* LaunchScreen.storyboard in Resources */,
+				4FA5133A26258E4200BECE99 /* Assets.xcassets in Resources */,
+				4FA5133826258E4000BECE99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		075D7858CD800C3A3004A4D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JHPhotoPickerController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57554D1236E720AB54AD4A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA5132626258E4000BECE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA5137D2625A15800BECE99 /* JHPhotoPreviewView.m in Sources */,
+				4FA5132F26258E4000BECE99 /* AppDelegate.m in Sources */,
+				4FA5134926258E9700BECE99 /* JHPhotoPickerController.m in Sources */,
+				4FA5137426259C3800BECE99 /* JHPhotoPickerModel.m in Sources */,
+				4FA513792625A11A00BECE99 /* JHPhotoPreviewCell.m in Sources */,
+				4FA5134026258E4200BECE99 /* main.m in Sources */,
+				4FA5136F26259A7A00BECE99 /* JHPhotoPickerCell.m in Sources */,
+				4FA51368262599F900BECE99 /* JHPhotoPreviewController.m in Sources */,
+				4FA5133226258E4000BECE99 /* SceneDelegate.m in Sources */,
+				4FA513512625902900BECE99 /* ViewController.m in Sources */,
+				4F52C5CB262A6F1200DA573E /* UIView+JHExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FA5133626258E4000BECE99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA5133726258E4000BECE99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FA5133B26258E4200BECE99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA5133C26258E4200BECE99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FA5134126258E4200BECE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FA5134226258E4200BECE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FA5134426258E4200BECE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0EC145CE50C8E9F831B4AA8 /* Pods-JHPhotoPickerController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = JHPhotoPickerController/PrefixHeader.pch;
+				INFOPLIST_FILE = JHPhotoPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HJHAndTJ.JHPhotoPickerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4FA5134526258E4200BECE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1140D8920AA1F6CE292067B9 /* Pods-JHPhotoPickerController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = JHPhotoPickerController/PrefixHeader.pch;
+				INFOPLIST_FILE = JHPhotoPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HJHAndTJ.JHPhotoPickerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA5132526258E4000BECE99 /* Build configuration list for PBXProject "JHPhotoPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5134126258E4200BECE99 /* Debug */,
+				4FA5134226258E4200BECE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA5134326258E4200BECE99 /* Build configuration list for PBXNativeTarget "JHPhotoPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5134426258E4200BECE99 /* Debug */,
+				4FA5134526258E4200BECE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA5132226258E4000BECE99 /* Project object */;
+}
