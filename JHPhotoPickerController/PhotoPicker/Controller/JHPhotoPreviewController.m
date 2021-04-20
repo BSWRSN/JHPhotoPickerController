@@ -6,10 +6,10 @@
 //
 
 #import "JHPhotoPreviewController.h"
-#import "JHPhotoPreviewCell.h"
+#import "JHPhotoBrowserCell.h"
 #import "JHPhotoPickerModel.h"
 
-static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
+static NSString *const JHPhotoPreviewCellID = @"JHPhotoBrowserCell";
 
 @interface JHPhotoPreviewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
 
@@ -41,6 +41,10 @@ static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
     
 }
 
+- (UIModalPresentationStyle)modalPresentationStyle{
+    return UIModalPresentationCustom;
+}
+
 - (BOOL)prefersStatusBarHidden{
     return YES;
 }
@@ -57,6 +61,7 @@ static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.collectionView];
     
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,16 +103,16 @@ static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    JHPhotoPreviewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:JHPhotoPreviewCellID forIndexPath:indexPath];
+    JHPhotoBrowserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:JHPhotoPreviewCellID forIndexPath:indexPath];
     
     cell.model = self.photoArray[indexPath.item];
     cell.convertRect = self.convertRect;
     
     __weak typeof(self) weakSelf = self;
-    [cell previewSingleTapGestureRecognizerBlock:^ {
+    [cell singleTapGestureRecognizerBlock:^ {
         __strong typeof(weakSelf) strongSelf = weakSelf;
-        [self.navigationController setNavigationBarHidden:NO animated:NO];
-        [strongSelf.navigationController popViewControllerAnimated:NO];
+        [strongSelf.navigationController setNavigationBarHidden:NO animated:NO];
+//        [strongSelf.navigationController popViewControllerAnimated:NO];
         [strongSelf dismissViewControllerAnimated:NO completion:nil];
     }];
     
@@ -115,14 +120,14 @@ static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    if ([cell isKindOfClass:[JHPhotoPreviewCell class]]) {
-        [(JHPhotoPreviewCell *)cell recoverSubviews];
+    if ([cell isKindOfClass:[JHPhotoBrowserCell class]]) {
+        [(JHPhotoBrowserCell *)cell recoverSubviews];
     }
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-//    if ([cell isKindOfClass:[LHPhotoPreviewCell class]]) {
-//        [(LHPhotoPreviewCell *)cell recoverSubviews];
+//    if ([cell isKindOfClass:[JHPhotoPreviewCell class]]) {
+//        [(JHPhotoPreviewCell *)cell recoverSubviews];
 //    }
 }
 
@@ -158,7 +163,7 @@ static NSString *const JHPhotoPreviewCellID = @"JHPhotoPreviewCell";
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.contentOffset = CGPointMake(0, 0);
         
-        [_collectionView registerClass:[JHPhotoPreviewCell class] forCellWithReuseIdentifier:JHPhotoPreviewCellID];
+        [_collectionView registerClass:[JHPhotoBrowserCell class] forCellWithReuseIdentifier:JHPhotoPreviewCellID];
     }
     return _collectionView;
 }

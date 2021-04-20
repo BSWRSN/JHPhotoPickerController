@@ -1,5 +1,5 @@
 //
-//  JHPhotoPreviewCell.h
+//  JHPhotoBrowserCell.h
 //  JHPhotoPickerController
 //
 //  Created by Jiahao Huang on 2021/4/13.
@@ -7,21 +7,19 @@
 
 #import <UIKit/UIKit.h>
 #import "JHPhotoPickerModel.h"
-#import "JHPhotoPreviewView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^SingleTapGestureBlock)(void);
+typedef void(^SingleBlock)(void);
 
 
-@interface JHPhotoPreviewCell : UICollectionViewCell
+@interface JHPhotoBrowserCell : UICollectionViewCell
 
 @property (nonatomic, assign) CGRect convertRect;
-@property (nonatomic, strong) JHPhotoPreviewView *previewView;
 @property (nonatomic, strong) JHPhotoPickerModel *model;
 
 - (void)recoverSubviews;
-- (void)previewSingleTapGestureRecognizerBlock:(SingleTapGestureBlock)block;
+- (void)singleTapGestureRecognizerBlock:(SingleBlock)block;
 
 @end
 

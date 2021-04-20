@@ -27,7 +27,7 @@ static NSString *const JHPhotoPickerCellID = @"JHPhotoPickerCell";
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.view.backgroundColor = [UIColor blackColor];
+//    self.view.backgroundColor = [UIColor blackColor];
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -89,8 +89,8 @@ static NSString *const JHPhotoPickerCellID = @"JHPhotoPickerCell";
     }
     
     [vc reloadWithPhotoArray:photoArr index:indexPath.item];
-    
-    [self.navigationController pushViewController:vc animated:NO];
+//    [self.navigationController pushViewController:vc animated:NO];
+    [self presentViewController:vc animated:NO completion:nil];
 }
 
 
@@ -110,7 +110,7 @@ static NSString *const JHPhotoPickerCellID = @"JHPhotoPickerCell";
         layout.minimumInteritemSpacing = 0;
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        _collectionView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+        _collectionView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         

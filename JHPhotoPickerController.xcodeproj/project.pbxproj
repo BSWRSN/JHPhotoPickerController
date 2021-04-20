@@ -20,8 +20,7 @@
 		4FA51368262599F900BECE99 /* JHPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA51367262599F900BECE99 /* JHPhotoPreviewController.m */; };
 		4FA5136F26259A7A00BECE99 /* JHPhotoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */; };
 		4FA5137426259C3800BECE99 /* JHPhotoPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5137326259C3800BECE99 /* JHPhotoPickerModel.m */; };
-		4FA513792625A11A00BECE99 /* JHPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */; };
-		4FA5137D2625A15800BECE99 /* JHPhotoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */; };
+		4FA513792625A11A00BECE99 /* JHPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA513782625A11A00BECE99 /* JHPhotoBrowserCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +48,8 @@
 		4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPickerCell.m; sourceTree = "<group>"; };
 		4FA5137226259C3800BECE99 /* JHPhotoPickerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPickerModel.h; sourceTree = "<group>"; };
 		4FA5137326259C3800BECE99 /* JHPhotoPickerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPickerModel.m; sourceTree = "<group>"; };
-		4FA513772625A11A00BECE99 /* JHPhotoPreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPreviewCell.h; sourceTree = "<group>"; };
-		4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPreviewCell.m; sourceTree = "<group>"; };
-		4FA5137B2625A15800BECE99 /* JHPhotoPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoPreviewView.h; sourceTree = "<group>"; };
-		4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoPreviewView.m; sourceTree = "<group>"; };
+		4FA513772625A11A00BECE99 /* JHPhotoBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPhotoBrowserCell.h; sourceTree = "<group>"; };
+		4FA513782625A11A00BECE99 /* JHPhotoBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHPhotoBrowserCell.m; sourceTree = "<group>"; };
 		D7C43BB92F6A2540E85FEA40 /* Pods_JHPhotoPickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHPhotoPickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EC145CE50C8E9F831B4AA8 /* Pods-JHPhotoPickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHPhotoPickerController.debug.xcconfig"; path = "Target Support Files/Pods-JHPhotoPickerController/Pods-JHPhotoPickerController.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,10 +149,8 @@
 			children = (
 				4FA5136D26259A7A00BECE99 /* JHPhotoPickerCell.h */,
 				4FA5136E26259A7A00BECE99 /* JHPhotoPickerCell.m */,
-				4FA513772625A11A00BECE99 /* JHPhotoPreviewCell.h */,
-				4FA513782625A11A00BECE99 /* JHPhotoPreviewCell.m */,
-				4FA5137B2625A15800BECE99 /* JHPhotoPreviewView.h */,
-				4FA5137C2625A15800BECE99 /* JHPhotoPreviewView.m */,
+				4FA513772625A11A00BECE99 /* JHPhotoBrowserCell.h */,
+				4FA513782625A11A00BECE99 /* JHPhotoBrowserCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,11 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA5137D2625A15800BECE99 /* JHPhotoPreviewView.m in Sources */,
 				4FA5132F26258E4000BECE99 /* AppDelegate.m in Sources */,
 				4FA5134926258E9700BECE99 /* JHPhotoPickerController.m in Sources */,
 				4FA5137426259C3800BECE99 /* JHPhotoPickerModel.m in Sources */,
-				4FA513792625A11A00BECE99 /* JHPhotoPreviewCell.m in Sources */,
+				4FA513792625A11A00BECE99 /* JHPhotoBrowserCell.m in Sources */,
 				4FA5134026258E4200BECE99 /* main.m in Sources */,
 				4FA5136F26259A7A00BECE99 /* JHPhotoPickerCell.m in Sources */,
 				4FA51368262599F900BECE99 /* JHPhotoPreviewController.m in Sources */,

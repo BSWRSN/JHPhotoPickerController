@@ -20,6 +20,14 @@
 
 #define JH_NavBarHeight ([UIApplication sharedApplication].statusBarFrame.size.height + [UINavigationBar appearance].frame.size.height)
 
+#define kPreventRepeatClickTime(_seconds_) \
+static BOOL shouldPrevent; \
+if (shouldPrevent) return; \
+shouldPrevent = YES; \
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((_seconds_) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ \
+shouldPrevent = NO; \
+}); \
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

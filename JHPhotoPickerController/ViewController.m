@@ -23,7 +23,7 @@
 
 - (IBAction)openPhotoPicker:(UIButton *)sender {
     JHPhotoPickerController *vc = [[JHPhotoPickerController alloc] init];
-    vc.photoArray = [NSMutableArray arrayWithObjects:@{@"photoStr":@"danaimei"}, @{@"photoStr":@"lptj1"}, @{@"photoStr":@"lptj2"}, @{@"photoStr":@"lptj3"}, @{@"photoStr":@"lptj4"}, @{@"photoStr":@"lptj5"}, @{@"photoStr":@"xianmu"}, nil];
+    vc.photoArray = [NSMutableArray arrayWithObjects:@{@"photoStr":@"danaimei"}, @{@"photoStr":@"lptj1"}, @{@"photoStr":@"lptj2"}, @{@"photoStr":@"lptj3"}, @{@"photoStr":@"lptj4"}, @{@"photoStr":@"lptj5"}, @{@"photoStr":@"lptj6"}, @{@"photoStr":@"lptj7"}, @{@"photoStr":@"nuli"}, nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
