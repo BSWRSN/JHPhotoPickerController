@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view.
     
 //    NSLog(@"status bar height == %f, navigation bar height == %f", [UIApplication sharedApplication].statusBarFrame.size.height, [UINavigationBar appearance].frame.size.height);
+    self.navigationItem.title = @"图片浏览";
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
 
 - (IBAction)openPhotoPicker:(UIButton *)sender {

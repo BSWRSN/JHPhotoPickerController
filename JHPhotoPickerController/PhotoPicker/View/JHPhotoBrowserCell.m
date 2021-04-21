@@ -153,7 +153,7 @@
         CGPoint point = [pan locationInView:pan.view];
         /// 获取开始拖拽时到拖拽后的距离
         CGPoint translation = [pan translationInView:pan.view];
-        NSLog(@"%@", NSStringFromCGPoint(translation));
+        
         // 背景渐变
         CGFloat translationY = translation.y/1.5;
         CGFloat alphaComponent = 1 - translationY/256;
@@ -176,6 +176,7 @@
         CGFloat scaleX = self.location.x/self.imageViewFrame.size.width;
         CGFloat scaleY = (self.location.y - self.imageViewFrame.origin.y)/self.imageViewFrame.size.height;
         
+        // 当前图片的 x、y 到触摸点的距离
         CGFloat xn = self.imageView.jh_width * scaleX;
         CGFloat yn = self.imageView.jh_height * scaleY;
         
@@ -212,23 +213,18 @@
     }
     CGPoint point = [gestureRecognizer locationInView:gestureRecognizer.view];
     CGPoint translation = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:gestureRecognizer.view];
-    NSLog(@"=====%@, %@", NSStringFromCGPoint(translation), NSStringFromClass([gestureRecognizer class]));
-    // 判断 secollView 是否滚动到顶部
-    if (self.isScrollViewZoom && (self.scrollView.contentOffset.y >= 0 || translation.y <= 0)) {
-        if (translation.x > translation.y) {
-            return false;
-        }
-        if (fabs(translation.x) < fabs(translation.y) && self.scrollView.contentOffset.y == 0) {
+    
+    if (fabs(translation.x) > fabs(translation.y) || translation.y <= 0) {
+        return false;
+    }
+    
+    if (self.isScrollViewZoom) {
+        if ( self.scrollView.contentOffset.y == 0) {
             self.location = point;
             self.imageViewFrame = self.imageView.frame;
             return true;
         }
         return false;
-        
-    } else {
-        if ((fabs(translation.x) > fabs(translation.y) || translation.y <= 0) && !self.isScrollViewZoom) {
-            return false;
-        }
     }
     
     self.location = point;
@@ -268,16 +264,11 @@
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-//    NSLog(@"y---%f", scrollView.contentOffset.y);
+
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    NSLog(@"y>>>>%f", scrollView.contentOffset.y);
-//    if (scrollView.contentOffset.y) {
-//
-//    } else {
-//
-//    }
+
 }
 
 
